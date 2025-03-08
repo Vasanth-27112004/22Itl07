@@ -15,3 +15,12 @@ jobs:
 
      - name: Docker Images
         run: docker images
+
+     - name: login to Docker Hub
+       uses:  docker/login-actio@v3
+       with: 
+         username: ${{ vars.DOCKERHUB_USERNAME }}
+         password: ${{ secrets.DOCKERHUB_TOKEN }}
+
+       - name: Docker Push
+         run: docker build -t vasanth414/ml-model-22itl07 .
