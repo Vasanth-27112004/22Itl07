@@ -14,7 +14,7 @@ jobs:
        run: docker build -t vasanth414/ml-model-22itl07 .
 
      - name: Docker Images
-        run: docker images
+       run: docker images
 
      - name: login to Docker Hub
        uses:  docker/login-actio@v3
