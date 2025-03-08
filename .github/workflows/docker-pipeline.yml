@@ -7,13 +7,13 @@ jobs:
      - name: print-22itl07
        run: echo "Hello World - 22itl07"
 
-       - name: checkout
+     - name: checkout
        uses: actions/checkout@v4
 
-        - name: Docker build
+     - name: Docker Build
        run: docker build -t vasanth414/ml-model-22itl07 .
 
-       - name: Docker Images
+     - name: Docker Images
        run: docker images
        
        
