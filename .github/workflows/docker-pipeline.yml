@@ -11,4 +11,4 @@ jobs:
      - name: Docker Build
        run: docker build -t vasanth414/ml-model-22itl07 .
      - name: Docker Images
-        run: docker images
+       run: docker images
