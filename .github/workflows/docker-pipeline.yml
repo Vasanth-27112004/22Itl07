@@ -1,21 +1,14 @@
 name: docker-pipeline-vasanth
-on: push
+on : push
 jobs:
  docker-job:
    runs-on: ubuntu-latest
    steps:
-     - name: print-22itl07
+     - name: Print your Register Number
        run: echo "Hello World - 22itl07"
-
-     - name: checkout
+     - name: Checkout
        uses: actions/checkout@v4
-
      - name: Docker Build
        run: docker build -t vasanth414/ml-model-22itl07 .
-
      - name: Docker Images
-       run: docker images
-       
-       
-
-     
+        run: docker images
